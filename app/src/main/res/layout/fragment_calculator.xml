@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".CalculatorFragment">
+
+    <TextView
+        android:id="@+id/text_expression"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="@color/grey_200"
+        android:textSize="30sp"
+        android:layout_gravity="end"
+        android:layout_weight="1.4"
+        android:text="0"
+        android:gravity="end|bottom" />
+
+    <TextView
+        android:id="@+id/text_input_and_result"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="end|bottom"
+        android:layout_weight="1.6"
+        android:layout_gravity="end"
+        android:text="0"
+        android:textSize="65sp"
+        android:textColor="@color/white"/>
+
+    <TableLayout
+        android:id="@+id/calculator_table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/clear_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/grey_500"
+                android:text="@string/clear" />
+
+            <TextView
+                android:id="@+id/bracket_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/grey_500"
+                android:text="@string/bracket"
+                 />
+
+            <TextView
+                android:id="@+id/back_bracket_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/grey_500"
+                android:text="@string/backBracket" />
+
+            <TextView
+                android:id="@+id/division_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/orange_A700"
+                android:text="@string/division" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seven_button"
+                style="@style/MyButton"
+                android:text="@string/seven" />
+
+            <TextView
+                android:id="@+id/eight_button"
+                style="@style/MyButton"
+                android:text="@string/eight" />
+
+            <TextView
+                android:id="@+id/nine_button"
+                style="@style/MyButton"
+                android:text="@string/nine" />
+
+            <TextView
+                android:id="@+id/multiply_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/orange_A700"
+                android:text="@string/multiply" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/four_button"
+                style="@style/MyButton"
+                android:text="@string/four" />
+
+            <TextView
+                android:id="@+id/fife_button"
+                style="@style/MyButton"
+                android:text="@string/five" />
+
+            <TextView
+                android:id="@+id/six_button"
+                style="@style/MyButton"
+                android:text="@string/six" />
+
+            <TextView
+                android:id="@+id/minus_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/orange_A700"
+                android:text="@string/minus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/one_button"
+                style="@style/MyButton"
+                android:text="@string/one" />
+
+            <TextView
+                android:id="@+id/two_button"
+                style="@style/MyButton"
+                android:text="@string/two" />
+
+            <TextView
+                android:id="@+id/three_button"
+                style="@style/MyButton"
+                android:text="@string/three" />
+
+            <TextView
+                android:id="@+id/plus_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/orange_A700"
+                android:text="@string/plus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/plus_minus_button"
+                style="@style/MyButton"
+                android:text="@string/plusMinus" />
+
+            <TextView
+                android:id="@+id/zero_button"
+                style="@style/MyButton"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/point_button"
+                style="@style/MyButton"
+                android:text="@string/point" />
+
+            <TextView
+                android:id="@+id/result_button"
+                style="@style/MyButton"
+                android:backgroundTint="@color/orange_A700"
+                android:text="@string/result" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
